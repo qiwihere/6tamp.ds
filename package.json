@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build:module": "parcel build index.js -d module",
-    "build:storybook": "parcel build index.html --public-url ./ -d docs"
+    "start": "parcel src/index.html",
+    "build:storybook": "parcel build src/index.html --public-url ./ -d docs",
+    "build:module": "export NODE_ENV=production ; babel src/components --out-dir module --copy-files"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.14.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,6 +20,9 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "babel-preset-react-app": "^10.0.0",
     "parcel-bundler": "^1.12.5"
   },
   "files": [
