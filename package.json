@@ -23,6 +23,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "files": [
-    "build"
+    "src/components"
   ]
 }
