@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build:storybook": "parcel build src/index.html -d docs",
+    "build:storybook": "parcel build src/index.html --public-url ./ -d docs",
     "build:module": "parcel build src/index.js -d build",
     "build": "npm run build:storybook ; npm run build:module"
   },
