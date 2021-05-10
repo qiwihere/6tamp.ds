@@ -26,6 +26,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "files": [
-    "index.js"
+    "lib"
   ]
 }
