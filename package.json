@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build:storybook": "parcel build src/index.html --public-url ./ -d docs",
-    "build:module": "export NODE_ENV=production ; babel src/components --out-dir module --copy-files"
+    "build:module": "export NODE_ENV=production ; babel src/components --out-file ./index.js --copy-files"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "files": [
-    "module"
+    "index.js"
   ]
 }
