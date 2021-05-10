@@ -2,7 +2,7 @@ import React from "react";
 import Global from "./components/Global";
 import components from "./components";
 import AnimatedRoute from "./components/MobileOnly/AnimatedRoute";
-import {BrowserRouter, Link, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
 
 const App = () => {
     return <>
@@ -37,14 +37,9 @@ const App = () => {
                 <div style={{margin: "40px 0"}}>
                     <BrowserRouter>
                         <Link to={"/"}>Home</Link> <Link to={"/about"}>About</Link> <Link to={"/contact"}>Contact</Link>
-                        <Switch>
-                            <div>
-                                <AnimatedRoute path={"/"}>Home page is here</AnimatedRoute>
-                                <AnimatedRoute path={"/about"}>About page is here</AnimatedRoute>
-                                <AnimatedRoute path={"/contact"}>Contact page is here</AnimatedRoute>
-                                <Redirect to={"/"} />
-                            </div>
-                        </Switch>
+                        <AnimatedRoute path={"/"}>Home page is here</AnimatedRoute>
+                        <AnimatedRoute path={"/about"}>About page is here</AnimatedRoute>
+                        <AnimatedRoute path={"/contact"}>Contact page is here</AnimatedRoute>
                     </BrowserRouter>
                 </div>
             </div>
