@@ -44,7 +44,6 @@ Button.defaultProps = {
     display: "inline",
     type: "primary",
     tag: "button",
-    href: "string",
     disabled: false
 }
 
