@@ -1,12 +1,11 @@
 {
   "name": "6tamp.ds",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build:storybook": "parcel build src/index.html -d storybook",
-    "build:module": "parcel build src/lib.js -d build"
+    "build:module": "parcel build src/index.js -d build"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +20,8 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "files": [
+    "build"
+  ]
 }
