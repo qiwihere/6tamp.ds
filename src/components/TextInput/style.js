@@ -21,7 +21,7 @@ const Input = styled.input`
 
 const Container = styled.div`
   ::after{
-    display: block;
+    display: ${state=>!!state.error?'block':'none'};
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
