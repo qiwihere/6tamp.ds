@@ -6,12 +6,14 @@ const TextInput = (
     {
         error,
         placeholder,
-        onChange
+        onChange,
+        name
     }
 ) => <Container
     error={error}
 >
     <Input
+        name={name}
         error={error}
         placeholder={placeholder}
         onChange={onChange}
@@ -26,7 +28,8 @@ TextInput.defaultProps = {
 TextInput.propTypes = {
     error: PropTypes.string,
     placeholder: PropTypes.string,
-    onChane: PropTypes.func
+    onChange: PropTypes.func,
+    name: PropTypes.string.isRequired
 }
 
 export default TextInput
