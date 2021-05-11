@@ -11,7 +11,8 @@ const Input = styled.input`
   border-radius: 8px;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: ${state=>!!state.error?'10px':'30px'};
+  margin-bottom: ${state=>!!state.error?'0px':'30px'};
+  margin-top: 20px;
   outline: none;
   
   ::placeholder{
@@ -25,6 +26,7 @@ const Container = styled.div`
     font-weight: 400;
     line-height: 17px;
     content: "${state=>state.error}";
+    margin-top: 10px;
     margin-bottom: 30px;
     color: ${style.input.error.border}
   }
