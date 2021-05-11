@@ -61,8 +61,8 @@ const style = {
         }
     },
 
-    mainText: "#535353",
-    secondaryText: "#636363"
+    mainText: "#282828",
+    secondaryText: "#535353"
 }
 
 export default style
