@@ -6,7 +6,7 @@ const PageDescription = styled.div`
   line-height: 24px;
   font-weight: 400;
   color: ${style.secondaryText};
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `
 
 export default PageDescription
