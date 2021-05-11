@@ -12,7 +12,6 @@ const Input = styled.input`
   box-sizing: border-box;
   width: 100%;
   margin-bottom: ${state=>!!state.error?'0px':'30px'};
-  margin-top: 20px;
   outline: none;
   
   ::placeholder{
