@@ -5,32 +5,37 @@ const Input = styled.input`
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  color: ${state=>!!state.error?style.input.error.text:style.input.normal.text};
+  color: ${(state) =>
+    !!state.error ? style.input.error.text : style.input.normal.text};
   padding: 14px 10px;
-  border: 1px solid ${state=>!!state.error?style.input.error.border:style.input.normal.border};
+  border: 1px solid
+    ${(state) =>
+      !!state.error ? style.input.error.border : style.input.normal.border};
   border-radius: 8px;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: ${state=>!!state.error?'0px':'30px'};
+  margin-bottom: ${(state) => (!!state.error ? "0px" : "30px")};
   outline: none;
-  
-  ::placeholder{
-    color: ${state=>!!state.error?style.input.error.placeholder:style.input.normal.placeholder};
+
+  ::placeholder {
+    color: ${(state) =>
+      !!state.error
+        ? style.input.error.placeholder
+        : style.input.normal.placeholder};
   }
-`
+`;
 
 const Container = styled.div`
-  ::after{
-    display: ${state=>!!state.error?'block':'none'};
+  ::after {
+    display: ${(state) => (!!state.error ? "block" : "none")};
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    content: "${state=>state.error}";
+    content: "${(state) => state.error}";
     margin-top: 10px;
     margin-bottom: 30px;
-    color: ${style.input.error.border}
+    color: ${style.input.error.border};
   }
-`
+`;
 
-
-export {Container, Input}
+export { Container, Input };

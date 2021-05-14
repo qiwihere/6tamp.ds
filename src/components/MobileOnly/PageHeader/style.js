@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import style from "../../style";
 
 const PageHeader = styled.div`
@@ -7,6 +7,6 @@ const PageHeader = styled.div`
   font-weight: 600;
   color: ${style.mainText};
   margin-bottom: 20px;
-`
+`;
 
-export default PageHeader
+export default PageHeader;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import style from "../../style";
 
 const PageDescription = styled.div`
@@ -7,6 +7,6 @@ const PageDescription = styled.div`
   font-weight: 400;
   color: ${style.secondaryText};
   margin-bottom: 40px;
-`
+`;
 
-export default PageDescription
+export default PageDescription;
