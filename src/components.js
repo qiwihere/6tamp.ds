@@ -1,7 +1,9 @@
+import React from 'react'
 import Button from "./components/Button";
 import TextInput from "./components/TextInput";
 import MobilePageHeader from "./components/MobileOnly/PageHeader";
 import MobilePageDescription from "./components/MobileOnly/PageDescription";
+import MobileModalContent from "./components/MobileOnly/ModalContent";
 
 
 const components = [
@@ -65,6 +67,20 @@ const components = [
         name: "<MobilePageDescription>",
         children: "This is an example of description",
         props: []
+    },
+    {
+        component: MobileModalContent,
+        name: "<MobileModalContent>",
+        children: <><div>Text1</div><div>Text2Text2</div></>,
+        props: [
+            {
+                name: "height",
+                values: [
+                    "100px",
+                    "200px"
+                ]
+            }
+        ]
     }
 ]
 
