@@ -1,6 +1,6 @@
 {
   "name": "6tamp.ds",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/index.js",
   "scripts": {
     "start": "parcel src/index.html",
@@ -16,6 +16,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-input-mask": "^2.0.4",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.3.0"
