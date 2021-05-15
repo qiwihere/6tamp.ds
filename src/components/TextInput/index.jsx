@@ -11,6 +11,7 @@ const TextInput = ({ error, placeholder, onChange, name, mask }) => (
         error={error}
         placeholder={placeholder}
         mask={mask}
+        onChange={onChange}
       >
         {(inputProps) => <Input {...inputProps} />}
       </InputMask>
