@@ -3,7 +3,7 @@ import { Input, Container } from "./style";
 import InputMask from "react-input-mask";
 import React from "react";
 
-const TextInput = ({ error, placeholder, onChange, name, mask }) => (
+const TextInput = ({ error, placeholder, onChange, name, mask, type }) => (
   <Container error={error}>
     {mask ? (
       <InputMask
@@ -12,6 +12,7 @@ const TextInput = ({ error, placeholder, onChange, name, mask }) => (
         placeholder={placeholder}
         mask={mask}
         onChange={onChange}
+        type={type}
       >
         {(inputProps) => <Input {...inputProps} />}
       </InputMask>
@@ -21,6 +22,7 @@ const TextInput = ({ error, placeholder, onChange, name, mask }) => (
         error={error}
         placeholder={placeholder}
         onChange={onChange}
+        type={type}
       />
     )}
   </Container>
@@ -30,6 +32,7 @@ TextInput.defaultProps = {
   error: "",
   placeholder: "",
   mask: "",
+  type: "text"
 };
 
 TextInput.propTypes = {
@@ -38,6 +41,7 @@ TextInput.propTypes = {
   onChange: PropTypes.func,
   name: PropTypes.string.isRequired,
   mask: PropTypes.string,
+  type: PropTypes.string
 };
 
 export default TextInput;
